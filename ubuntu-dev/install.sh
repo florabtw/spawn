@@ -34,7 +34,7 @@ sudo apt-get install \
 
 if ! vcsh list | grep -q dots; then
   vcsh clone https://github.com/ncpierson/dots.git dots
-  vcsh vim submodule update --init
+  vcsh dots submodule update --init
   vim +PluginInstall +qall
 fi
 
