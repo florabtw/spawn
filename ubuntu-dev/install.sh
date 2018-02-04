@@ -26,6 +26,7 @@ sudo apt-get install \
   ack-grep           \
   sqlite3            \
   ffmpeg             \
+  imagemagick        \
   -y
 
 # Special Installs
