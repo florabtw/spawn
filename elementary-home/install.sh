@@ -104,11 +104,7 @@ EOF
 
 ## Vim / Config
 
-if ! sudo -u $USER vcsh list | grep -q vim; then
-  sudo -u $USER vcsh clone https://github.com/ncpierson/dotfiles-vim.git vim
-  sudo -u $USER vcsh vim submodule update --init
-  sudo -u $USER vim +PluginInstall +qall
-fi
+vcsh clone https://github.com/ncpierson/dots.git dots
 
 ## Git / Config
 

@@ -33,11 +33,7 @@ sudo apt-get install \
 
 ## Dotfiles
 
-if ! vcsh list | grep -q dots; then
-  vcsh clone https://github.com/ncpierson/dots.git dots
-  vcsh dots submodule update --init
-  vim +PluginInstall +qall
-fi
+vcsh clone https://github.com/ncpierson/dots.git dots
 
 ## Node / NVM
 

@@ -16,11 +16,7 @@ sudo apt-get install nginx
 
 # Vim / Config
 
-if ! vcsh list | grep -q vim; then
-  vcsh clone https://github.com/ncpierson/dots.git dots
-  vcsh dots submodule update --init
-  vim +PluginInstall +qall
-fi
+vcsh clone https://github.com/ncpierson/dots.git dots
 
 # NVM / Node
 
