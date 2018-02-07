@@ -11,8 +11,11 @@ sudo apt-get update
 
 # Installations
 
-sudo apt-get install vcsh
-sudo apt-get install nginx
+sudo apt-get install \
+  vcsh               \
+  exuberant-ctags    \
+  nginx              \
+  -y
 
 # Vim / Config
 

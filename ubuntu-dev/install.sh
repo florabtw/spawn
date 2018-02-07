@@ -27,6 +27,7 @@ sudo apt-get install \
   sqlite3            \
   ffmpeg             \
   imagemagick        \
+  exuberant-ctags    \
   -y
 
 # Special Installs
