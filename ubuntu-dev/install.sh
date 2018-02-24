@@ -28,6 +28,7 @@ sudo apt-get install \
   ffmpeg             \
   imagemagick        \
   exuberant-ctags    \
+  httpie             \
   -y
 
 # Special Installs
