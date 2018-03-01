@@ -62,3 +62,7 @@ cd tmux-2.6
 sudo make install
 
 popd
+
+## Haskell
+
+wget -qO- https://get.haskellstack.org/ | sh
