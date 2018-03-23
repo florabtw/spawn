@@ -29,6 +29,7 @@ sudo apt-get install \
   imagemagick        \
   exuberant-ctags    \
   httpie             \
+  unzip              \
   -y
 
 # Special Installs
