@@ -4,6 +4,10 @@ if [ "$EUID" -eq 0 ]; then
   exit 1
 fi
 
+# Make sure we have curl
+
+sudo apt-get install curl
+
 # GPG Keys
 
 ## Mongo
@@ -23,7 +27,6 @@ sudo apt-get install \
   vcsh               \
   mongodb-org        \
   yarn               \
-  ack-grep           \
   sqlite3            \
   ffmpeg             \
   imagemagick        \
