@@ -39,7 +39,6 @@ sudo apt-get update
 # Installs
 
 sudo apt-get install             \
-  ack-grep                       \
   deluge                         \
   exuberant-ctags                \
   ffmpeg                         \
@@ -76,23 +75,22 @@ curl -L -o /tmp/slack.deb "https://downloads.slack-edge.com/linux_releases/slack
 dpkg -i /tmp/slack.deb
 
 ## Firefox Developer Edition
-# TODO Fix this
 
-# curl -L -o /tmp/firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US"
-# tar -xjf /tmp/firefox.tar.bz2 -C /opt/
-#
-# sudo cat <<EOF > /usr/share/applications/Firefox.desktop
-# [Desktop Entry]
-# Version=1.0
-# Name=Firefox Developer Edition
-# Comment=Browse the World Wide Web
-# Icon=/opt/firefox/browser/icons/mozicon128.png
-# Exec=/opt/firefox/firefox
-# Terminal=false
-# Type=Application
-# Categories=Network;WebBrowser;
-# Actions=Default;Mozilla;ProfileManager;
-# EOF
+curl -L -o /tmp/firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US"
+sudo tar -xjf /tmp/firefox.tar.bz2 -C /opt/
+
+sudo bash -c 'cat << EOF > /usr/share/applications/Firefox.desktop
+[Desktop Entry]
+Version=1.0
+Name=Firefox Developer Edition
+Comment=Browse the World Wide Web
+Icon=/opt/firefox/browser/chrome/icons/default/default128.png
+Exec=/opt/firefox/firefox
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;
+Actions=Default;Mozilla;ProfileManager;
+EOF'
 
 ## Dotfiles
 
