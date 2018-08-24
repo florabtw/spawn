@@ -26,6 +26,7 @@ sudo apt-get install             \
   git                            \
   httpie                         \
   imagemagick                    \
+  libgconf-2-4                   \
   sqlite3                        \
   vcsh                           \
   vim                            \
