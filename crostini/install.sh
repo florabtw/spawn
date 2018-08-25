@@ -22,7 +22,8 @@ sudo apt-get install \
   httpie             \
   imagemagick        \
   sqlite3            \
-  wget
+  wget               \
+  -y
 
 ./packages/node.sh
 ./packages/tmux.sh

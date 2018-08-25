@@ -8,4 +8,5 @@ sudo apt-get update
 
 sudo apt-get install        \
   oracle-java10-installer   \
-  oracle-java10-set-default
+  oracle-java10-set-default \
+  -y
