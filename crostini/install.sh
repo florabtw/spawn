@@ -13,6 +13,7 @@ sudo apt-get update
 # Personal
 
 ./packages/discord.sh
+./packages/runelite.sh
 ./packages/slack.sh
 
 # Development
