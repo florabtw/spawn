@@ -2,6 +2,7 @@
 
 sudo apt-get install software-properties-common -y
 
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 73C3DB2A
 sudo add-apt-repository ppa:linuxuprising/java
 
 sudo apt-get update
