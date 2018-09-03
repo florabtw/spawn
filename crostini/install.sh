@@ -16,6 +16,8 @@ sudo apt-get update
 ./packages/runelite.sh
 ./packages/slack.sh
 
+./crostini/packages/steam.sh
+
 # Development
 
 sudo apt-get install \
