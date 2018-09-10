@@ -2,7 +2,7 @@
 
 # For Debian
 
-sudo apt-get install curl
+sudo apt-get install curl -y
 
 sudo usermod -aG video,audio $USER
 
@@ -23,7 +23,7 @@ sudo apt-get install   \
   libglapi-mesa:i386  \
   -y
 
-sudo apt-get install steam
+sudo apt-get install steam -y
 
 curl -L -o /tmp/steam.deb "https://steamcdn-a.akamaihd.net/client/installer/steam.deb"
 
