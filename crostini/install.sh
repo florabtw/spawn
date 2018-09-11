@@ -4,6 +4,14 @@ if [ "$EUID" -eq 0 ]; then
   exit 1
 fi
 
+# Must run from project root.
+
+if [ "$(basename `pwd`)" != "spawn" ]
+then
+  echo "Must run from project root!"
+  exit 1
+fi
+
 # Core
 
 sudo apt-get update
