@@ -1,7 +1,5 @@
 #! /bin/bash
 
-# For Debian
-
 sudo apt-get install curl -y
 
 sudo usermod -aG video,audio $USER
@@ -23,8 +21,8 @@ sudo apt-get install   \
   libglapi-mesa:i386  \
   -y
 
-sudo apt-get install steam -y
-
 curl -L -o /tmp/steam.deb "https://steamcdn-a.akamaihd.net/client/installer/steam.deb"
 
 sudo dpkg -i /tmp/steam.deb
+
+sudo apt-get --fix-broken install
