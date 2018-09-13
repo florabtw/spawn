@@ -12,7 +12,6 @@ if [ "$EUID" -eq 0 ]; then
 fi
 
 # Must run from project root.
-
 if [ "$(basename `pwd`)" != "spawn" ]
 then
   echo "Must run from project root!"
