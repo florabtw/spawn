@@ -28,9 +28,11 @@ only work on a debian-based system, like Ubuntu, Debian itself, or Crostini.
 
 ### Personal
 
+* Google Chrome
 * Discord
 * RuneLite (old school runescape client)
 * Slack
+* Spotify
 * Steam
 
 ### Development
@@ -38,7 +40,9 @@ only work on a debian-based system, like Ubuntu, Debian itself, or Crostini.
 * My dotfiles for git, tmux, and vim.
 * Firefox Developer Edition
 * Java 10
+* MongoDB
 * nvm, node, npm
+* pm2 (and autostart)
 * tmux (2.6, from source)
 * yarn
 
