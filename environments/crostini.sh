@@ -1,3 +1,10 @@
+# For Linux in Chrome OS
+#
+# Primary usages:
+#   * personal laptop
+#   * light gaming
+#   * light development
+
 # Don't run as sudo!
 if [ "$EUID" -eq 0 ]; then
   echo "Must not run as sudo!"
