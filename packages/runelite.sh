@@ -11,8 +11,15 @@ sudo mkdir /opt/runelite
 sudo mv /tmp/runelite.jar /opt/runelite/
 sudo mv /tmp/runelite.png /opt/runelite/
 
-sudo bash -c 'cat <<EOF > /opt/runelite/run.sh
-java -jar /opt/runelite/runelite.jar --mode=OFF
+sudo bash -c 'cat <<"EOF" > /opt/runelite/run.sh
+#! /bin/bash
+SCALE=${1:-1}
+if [ -x "$(command -v sommelier)" ]; then
+  sommelier -X --scale=$SCALE --no-exit-with-child -- \
+    java -jar /opt/runelite/runelite.jar --mode=OFF
+else
+  java -jar /opt/runelite/runelite.jar --mode=OFF
+fi
 EOF'
 
 sudo chmod +x /opt/runelite/run.sh
@@ -21,7 +28,7 @@ sudo bash -c 'cat << EOF > /usr/share/applications/runelite.desktop
 [Desktop Entry]
 Version=1.0
 Name=RuneLite
-Comment=Play Runescape!
+Comment=Play Old School Runescape!
 Icon=/opt/runelite/runelite.png
 Exec=/opt/runelite/run.sh
 Terminal=false
