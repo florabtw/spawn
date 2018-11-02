@@ -14,7 +14,7 @@ follow these steps:
 ```
 git clone https://github.com/ncpierson/spawn.git
 cd spawn
-./crostini/install.sh
+./environments/crostini.sh
 ```
 
 Each environment has its own set of packages to be installed (to my taste), but
