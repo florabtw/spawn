@@ -12,7 +12,8 @@ if [ "$EUID" -eq 0 ]; then
 fi
 
 # Must run from project root.
-if [ "$(basename `pwd`)" != "spawn" ]
+cwd=$(basename `pwd`)
+if [ "$cwd" != "spawn" ] && [ "$cwd" != "Spawn" ];
 then
   echo "Must run from project root!"
   exit 1
@@ -35,6 +36,7 @@ sudo apt-get update
 # Development
 
 sudo apt-get install \
+  ack-grep	     \
   git                \
   httpie             \
   imagemagick        \
