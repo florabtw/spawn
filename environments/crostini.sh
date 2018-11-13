@@ -36,7 +36,7 @@ sudo apt-get update
 # Development
 
 sudo apt-get install \
-  ack-grep	     \
+  ack-grep           \
   git                \
   httpie             \
   imagemagick        \
@@ -45,5 +45,6 @@ sudo apt-get install \
   -y
 
 ./packages/node.sh
+./packages/tmate.sh
 ./packages/tmux.sh
 ./packages/yarn.sh

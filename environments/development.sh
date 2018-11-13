@@ -38,5 +38,6 @@ sudo apt-get install \
 
 ./packages/mongo.sh
 ./packages/node.sh
+./packages/tmate.sh
 ./packages/tmux.sh
 ./packages/yarn.sh
