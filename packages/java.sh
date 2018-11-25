@@ -5,12 +5,12 @@ sudo apt-get install         \
   software-properties-common \
   -y
 
+echo "deb http://ppa.launchpad.net/linuxuprising/java/ubuntu bionic main" | sudo tee /etc/apt/sources.list.d/linuxuprising-java.list
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 73C3DB2A
-sudo add-apt-repository ppa:linuxuprising/java -y
 
 sudo apt-get update
 
 sudo apt-get install        \
-  oracle-java10-installer   \
-  oracle-java10-set-default \
+  oracle-java11-installer   \
+  oracle-java11-set-default \
   -y
