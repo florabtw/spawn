@@ -3,6 +3,7 @@
 sudo apt-get update
 
 sudo apt-get install \
+  curl               \
   exuberant-ctags    \
   vim                \
   vcsh               \

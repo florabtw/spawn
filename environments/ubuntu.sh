@@ -1,4 +1,4 @@
-# For Linux in Chrome OS
+# For Home Ubuntu
 #
 # Primary usages:
 #   * personal laptop
@@ -28,9 +28,9 @@ sudo apt-get update
 # Personal
 
 ./packages/discord.sh
+./packages/firefox.sh
 ./packages/runelite.sh
 ./packages/slack.sh
-./packages/crostini/steam.sh
 
 # Development
 
@@ -39,6 +39,7 @@ sudo apt-get install \
   git                \
   httpie             \
   imagemagick        \
+  steam              \
   sqlite3            \
   wget               \
   -y
