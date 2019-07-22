@@ -13,12 +13,12 @@ sudo mv /tmp/runelite.png /opt/runelite/
 
 sudo bash -c 'cat <<"EOF" > /opt/runelite/run.sh
 #! /bin/bash
-SCALE=${1:-1}
+SCALE=${1:-0.5}
 if [ -x "$(command -v sommelier)" ]; then
   sommelier -X --scale=$SCALE --no-exit-with-child -- \
     java -jar /opt/runelite/runelite.jar --mode=OFF
 else
-  java -jar /opt/runelite/runelite.jar --mode=OFF
+  java -jar /opt/runelite/runelite.jar
 fi
 EOF'
 
