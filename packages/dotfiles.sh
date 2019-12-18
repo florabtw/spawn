@@ -2,9 +2,10 @@
 
 sudo apt-get update
 
+./packages/universal-ctags.sh
+
 sudo apt-get install \
   curl               \
-  exuberant-ctags    \
   vim                \
   vcsh               \
   -y
