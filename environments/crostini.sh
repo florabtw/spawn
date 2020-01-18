@@ -34,13 +34,13 @@ sudo apt-get update
 
 # Development
 
-sudo apt-get install \
-  ack-grep           \
-  git                \
-  httpie             \
-  imagemagick        \
-  sqlite3            \
-  wget               \
+sudo apt-get install     \
+  ack-grep               \
+  git                    \
+  imagemagick            \
+  fonts-noto-color-emoji \
+  sqlite3                \
+  wget                   \
   -y
 
 ./packages/gnome-terminal.sh
