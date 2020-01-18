@@ -43,6 +43,7 @@ sudo apt-get install \
   wget               \
   -y
 
+./packages/gnome-terminal.sh
 ./packages/node.sh
 ./packages/tmate.sh
 ./packages/tmux.sh
