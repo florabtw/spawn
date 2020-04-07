@@ -7,5 +7,4 @@
 ./packages/mac/tmux.sh
 
 brew install \
-  rbenv      \
   tmate
