@@ -12,7 +12,7 @@ If you wanted to "spawn" Crostini (Linux in Chrome OS), you would loosely
 follow these steps:
 
 ```
-git clone https://github.com/ncpierson/spawn.git
+git clone https://github.com/florabtw/spawn.git
 cd spawn
 ./environments/crostini.sh
 ```
