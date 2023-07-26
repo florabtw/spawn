@@ -1,6 +1,6 @@
 # Spawn
 
-Some super-specific install scripts for and from Nick Pierson. The goal is to
+Some super-specific install scripts for and from Flora. The goal is to
 make all of my (linux) computing environments completely reproducible.
 
 Note that these install scripts will likely only work on Debian-based
